@@ -1,0 +1,54 @@
+.itemContainer {
+  width: 274px;
+  height: 426px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.itemContainer img {
+  width: 274px;
+  height: 268px;
+  
+}
+.topBar {
+  width: 274px;
+  height: 426px;
+  position: relative;
+}
+.carBootomBar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.descList {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  gap: 5px;
+}
+.favouriteTrueIcon {
+  display: flex;
+  width: 15px;
+  height: 13px;
+  fill: blue;
+}
+.favouriteFalseIcon {
+  display: flex;
+  width: 15px;
+  height: 15px;
+  fill: #fff;
+
+}
+.favouriteBtn {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}

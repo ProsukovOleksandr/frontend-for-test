@@ -1,0 +1,8 @@
+.filter{
+    width: 224px;
+    height: 48px;
+    border: none;
+    border-radius: 14px;
+    padding: 14px 18px;
+    background-color: #F7F7FB;
+}
