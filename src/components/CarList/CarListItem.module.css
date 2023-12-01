@@ -8,7 +8,7 @@
 .itemContainer img {
   width: 274px;
   height: 268px;
-  
+  border-radius: 14px;
 }
 .topBar {
   width: 274px;
@@ -38,8 +38,8 @@
 .favouriteFalseIcon {
   display: flex;
   width: 15px;
-  height: 15px;
-  fill: #fff;
+  height: 13px;
+  fill: #ffffff;
 
 }
 .favouriteBtn {
@@ -48,7 +48,6 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  position: absolute;
-  top: 14px;
-  right: 14px;
+  background-color: red;
+
 }

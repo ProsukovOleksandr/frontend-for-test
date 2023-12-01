@@ -1,8 +1,10 @@
 import { selectFilter } from 'redux/carReducer';
+import css from './CarList.module.css';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { CarListItem } from './CarListItem';
 import { Filter } from './Filter';
-export const CarList = ({items}) => {
+import { nanoid } from 'nanoid';
+export const CarList = ({ items }) => {
   const filter = useSelector(selectFilter);
 
   const filterCars = (items, filter) => {
@@ -18,9 +20,9 @@ export const CarList = ({items}) => {
     <div>
       <h3>List of cars</h3>
       <Filter />
-      <ul>
+      <ul className={css.carList}>
         {filterCars(items, filter).map(item => {
-          return <CarListItem item={item} key={item._id} />;
+          return <CarListItem item={{ ...item }} key={nanoid()} />;
         })}
       </ul>
     </div>

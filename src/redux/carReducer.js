@@ -25,7 +25,7 @@ const carSlice = createSlice({
             state.filter = '';
         }).addCase(fetchCars.fulfilled,  (state, action)=>{
             state.isLoading = false;
-            state.items = action.payload;
+            state.items.push(...action.payload);
         }).addCase(fetchCars.rejected,  (state, action)=>{
             state.isLoading = false;
             state.error = action.payload;
