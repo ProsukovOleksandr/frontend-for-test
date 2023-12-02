@@ -7,9 +7,9 @@ import css from './App.module.css'
 const HomePage = lazy(() => import('pages/HomePage/HomePage'));
 const FavouritePage = lazy(() => import('pages/FavouritePage/FavouritePage'));
 const CarListPage = lazy(() => import('pages/CarListPage/CarListPage'));
-const HOME_ROUTE = '/';
-const CARS_ROUTE = '/catalog';
-const FAVOURITE_ROUTE = '/favourite';
+export const HOME_ROUTE = '/';
+export const CARS_ROUTE = '/catalog';
+export const FAVOURITE_ROUTE = '/favourite';
 const App = () => {
   const showModal = useSelector(selectShowModal);
 

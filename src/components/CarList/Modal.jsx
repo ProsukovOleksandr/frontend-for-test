@@ -26,6 +26,7 @@ export const Modal = () => {
   } = currentCar;
   const hideModal = ()=>{
     dispatch(setShowModal(false));
+    document.body.classList.remove('body-lock');
   }
   useEffect(() => {
     const handleKeyDown = e => {

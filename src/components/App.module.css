@@ -1,13 +1,16 @@
-
 .NavLink{
-    color: blue;
+    color: #fff;
     text-decoration: none;
     margin-left: 10px;
 }
 .navigationBlack{
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: rgba(46, 47, 66, 0.4);
 }
 .navigationLight{
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: blue;
+
 }

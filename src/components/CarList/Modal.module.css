@@ -2,9 +2,11 @@
 .modalLayout{
   width: 485px;
   height: 752px;
-  position: absolute;
-  top: 150px;
-  left: 30%;
+  position: fixed;
+  z-index: 200;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: #ffffff;
   border-radius: 24px;
   padding: 40px 16px 40px 40px;
@@ -88,4 +90,7 @@ width: auto;
   border-radius: 12px;
   padding: 12px 50px;
   
+}
+.rentalBtn:hover{
+  background-color: #0B44CD;
 }

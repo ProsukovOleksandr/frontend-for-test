@@ -34,7 +34,7 @@
   display: flex;
   width: 18px;
   height: 18px;
-  stroke: black;
+  fill: black;
 }
 .favouriteBtn {
   width: 18px;
@@ -44,8 +44,14 @@
   background-color: transparent;
   margin-left: 12px;
 }
+.favouriteBtn:hover{
+  background-color: #0B44CD;
+}
 .carBaseData {
   display: flex;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
 }
 .carName {
   margin-right: auto;
@@ -69,12 +75,15 @@
   margin-bottom: 8px;
   margin-top: 8px;
 }
+.descItem{
+  overflow-y: hidden;
+}
 .descItem:not(:first-child)::before{
   content: '';
   height: 16px;
   border: 1px solid #1214171A;
   margin-right: 8px;
-
+  
 }
 .learnMoreBtn {
   width: 274px;
@@ -84,4 +93,7 @@
   background-color: #3470ff;
   border-radius: 12px;
   padding: 12px 50px;
+}
+.learnMoreBtn:hover{
+  background-color: #0B44CD;
 }

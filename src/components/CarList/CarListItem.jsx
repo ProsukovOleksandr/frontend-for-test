@@ -41,7 +41,7 @@ export const CarListItem = ({ item }) => {
   const handleShowModal = () => {
     dispatch(setShowModal(true));
     dispatch(setCurrentCar(item));
-    console.log('clicked');
+    document.body.classList.add('body-lock');
   };
   return (
     <div className={css.itemContainer}>
