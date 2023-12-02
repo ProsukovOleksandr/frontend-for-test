@@ -2,10 +2,9 @@ import css from './CarListItem.module.css';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux/es/exports';
-import { setFavourites, setShowModal, setCurrentCar } from 'redux/carReducer';
+import { setFavourites, setShowModal, setCurrentCar, selectShowModal, selectFavourites  } from 'redux/carReducer';
 import svg from '../../img/symbol-defs.svg';
 import { nanoid } from 'nanoid';
-import { selectFavourites } from 'redux/carReducer';
 export const CarListItem = ({ item }) => {
   const dispatch = useDispatch();
   const [favourite, setFavourite] = useState(false);
@@ -22,7 +21,7 @@ export const CarListItem = ({ item }) => {
     address,
   } = item;
   const favouritesArr = useSelector(selectFavourites);
-
+  const showModal = useSelector(selectShowModal)
   useEffect(() => {
     const found = favouritesArr.some(item => item.id === id);
     setFavourite(found);
@@ -42,17 +41,16 @@ export const CarListItem = ({ item }) => {
   const handleShowModal = () => {
     dispatch(setShowModal(true));
     dispatch(setCurrentCar(item));
-    console.log("clicked")
+    console.log('clicked');
   };
   return (
-    <div className={css.itemContainer} >
-      <div className={css.topBar}>
-        <img src={img} alt={description} width="274px" height="268px" />
-      </div>
+    <div className={css.itemContainer}>
+        <img src={img} alt={description} width="274px" height="268px" className={css.carImg}/>
       <div className={css.carBootomBar}>
         <div className={css.carBaseData}>
           <span className={css.carName}>
-            {make} {model}, {year}{' '}
+            {make}
+            <span className={css.carModel}> {model}</span>, {year}{' '}
           </span>
           <span className={css.carPrice}>{rentalPrice}</span>
           <button onClick={addToFavourite} className={css.favouriteBtn}>
@@ -62,13 +60,9 @@ export const CarListItem = ({ item }) => {
               </svg>
             )}
             {!favourite && (
-              <svq
-                width="18px"
-                height="18px"
-                className={css.favouriteFalseIcon}
-              >
+              <svg width="18px" height="18px" className={css.favouriteFalseIcon}>
                 <use href={svg + '#icon-heart'}></use>
-              </svq>
+              </svg>
             )}
           </button>
         </div>
@@ -86,7 +80,9 @@ export const CarListItem = ({ item }) => {
             {model}
           </li>
         </ul>
-        <button className={css.learnMoreBtn} onClick={handleShowModal}>Learn More</button>
+        <button className={css.learnMoreBtn} onClick={handleShowModal} disabled={showModal? true:false}>
+          Learn More
+        </button>
       </div>
     </div>
   );

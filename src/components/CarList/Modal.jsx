@@ -54,20 +54,20 @@ export const Modal = () => {
           {make}  <span className={css.modalCarModel}>{model}</span> , {year}{' '}
         </span>
         <ul  className={css.infoList}>
-          <li>{address}</li>
-          <li>Id: {id}</li>
-          <li>Year: {year}</li>
-          <li>Type: {type}</li>
-          <li>Fuel Consumption: {fuelConsumption}</li>
-          <li>Engine Size: {engineSize}</li>
+          <li className={css.funcListItem}>{address}</li>
+          <li className={css.funcListItem}>Id: {id}</li>
+          <li className={css.funcListItem}>Year: {year}</li>
+          <li className={css.funcListItem}>Type: {type}</li>
+          <li className={css.funcListItem}>Fuel Consumption: {fuelConsumption}</li>
+          <li className={css.funcListItem}>Engine Size: {engineSize}</li>
         </ul>
         <p className={css.description}>{description}</p>
         <ul className={css.funcList}>
           {accessories.map(item => {
-            return <li key={item}>{item}</li>;
+            return <li key={item} className={css.funcListItem}>{item}</li>;
           })}
           {functionalities.map(item => {
-            return <li key={item}>{item}</li>;
+            return <li key={item} className={css.funcListItem}>{item}</li>;
           })}
         </ul>
         <span>Rental conditions: </span>

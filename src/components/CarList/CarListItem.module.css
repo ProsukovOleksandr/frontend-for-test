@@ -5,15 +5,10 @@
   flex-direction: column;
   gap: 14px;
 }
-.itemContainer img {
+.carImg {
   width: 274px;
-  height: 268px;
+  min-height: 268px;
   border-radius: 14px;
-}
-.topBar {
-  width: 274px;
-  height: 426px;
-  position: relative;
 }
 .carBootomBar {
   display: flex;
@@ -36,11 +31,10 @@
   fill: blue;
 }
 .favouriteFalseIcon {
-  display: block;
+  display: flex;
   width: 18px;
   height: 18px;
   stroke: black;
-  fill: black;
 }
 .favouriteBtn {
   width: 18px;
@@ -48,5 +42,46 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  margin-left: 12px;
+}
+.carBaseData {
+  display: flex;
+}
+.carName {
+  margin-right: auto;
+}
 
+.carModel {
+  color: #3470ff;
+}
+.descList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 270px;
+  height: 40px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #12141780;
+  column-gap: 12px;
+  row-gap: 4px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+.descItem:not(:first-child)::before{
+  content: '';
+  height: 16px;
+  border: 1px solid #1214171A;
+  margin-right: 8px;
+
+}
+.learnMoreBtn {
+  width: 274px;
+  height: 44px;
+  border: none;
+  color: #ffffff;
+  background-color: #3470ff;
+  border-radius: 12px;
+  padding: 12px 50px;
 }

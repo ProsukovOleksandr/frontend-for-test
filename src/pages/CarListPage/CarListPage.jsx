@@ -6,6 +6,7 @@ import { fetchCars } from 'redux/operations';
 import { selectCars, selectShowModal } from 'redux/carReducer';
 import { Modal } from 'components/CarList/Modal';
 import css from './CarListPage.module.css';
+import { Filter } from 'components/CarList/Filter';
 const CarListPage = () => {
   const dispatch = useDispatch();
   const [page, setPage] = useState(1);
@@ -31,9 +32,10 @@ const CarListPage = () => {
   }
   return (
     <>
-      <div className={showModal  ? css.backdrop: null}>
+      <div className={showModal  ? css.backdrop: css.container}>
       {items && (
         <>
+          <Filter />
           <CarList items={items} />
           {items.length >= 12 && isBtn && (
             <button onClick={loadMore} className={css.loadMoreBtn}>
