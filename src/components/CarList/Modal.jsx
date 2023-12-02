@@ -23,11 +23,11 @@ export const Modal = () => {
     rentalConditions,
     mileage,
   } = currentCar;
-  const hideModal = ()=>{
+  const hideModal = useCallback(() => {
     dispatch(setShowModal(false));
     document.body.classList.remove('body-lock');
-  }
- 
+  }, [dispatch]);
+  
   const handleKeyDown = useCallback((e) => {
     if (e.code === 'Escape') {
       hideModal();
