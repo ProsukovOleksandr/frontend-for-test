@@ -1,7 +1,7 @@
 import { selectCurrentCar, setShowModal } from 'redux/carReducer';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useDispatch } from 'react-redux';
-import { useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 import css from './Modal.module.css';
 export const Modal = () => {
   const currentCar = useSelector(selectCurrentCar);
@@ -19,7 +19,6 @@ export const Modal = () => {
     accessories,
     functionalities,
     rentalPrice,
-    rentalCompany,
     address,
     rentalConditions,
     mileage,
@@ -28,17 +27,20 @@ export const Modal = () => {
     dispatch(setShowModal(false));
     document.body.classList.remove('body-lock');
   }
-  useEffect(() => {
-    const handleKeyDown = e => {
-      if (e.code === 'Escape') {
-        hideModal();
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-
-    return () => window.removeEventListener('keydown', handleKeyDown);
+ 
+  const handleKeyDown = useCallback((e) => {
+    if (e.code === 'Escape') {
+      hideModal();
+    }
   }, [hideModal]);
+  
+  useEffect(() => {
+    window.addEventListener('keydown', handleKeyDown);
+  
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleKeyDown]);
 
   const handleBackdropClick = e => {
     if (e.currentTarget === e.target) {

@@ -25,7 +25,7 @@ export const CarListItem = ({ item }) => {
   useEffect(() => {
     const found = favouritesArr.some(item => item.id === id);
     setFavourite(found);
-  }, [favouritesArr]);
+  }, [favouritesArr, id]);
 
   const addToFavourite = () => {
     if (favouritesArr.some(item => item.id === id)) {
