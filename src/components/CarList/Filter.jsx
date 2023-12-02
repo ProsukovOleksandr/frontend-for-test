@@ -4,6 +4,7 @@ import { setFilter } from 'redux/carReducer';
 import filters from '../CarList/makes.json';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { selectShowModal } from 'redux/carReducer';
+import { nanoid } from 'nanoid';
 export const Filter = () => {
   const dispatch = useDispatch();
   const handleFilter = e => {
@@ -20,7 +21,7 @@ export const Filter = () => {
       disabled={showModal? true:false}
     >
       {filters.map(filter => {
-        return <option value={filter}>{filter}</option>;
+        return <option value={filter} key={nanoid()}>{filter}</option>;
       })}
     </select>
     </div>

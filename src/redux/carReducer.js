@@ -11,6 +11,8 @@ export const initialState = {
 
   currentCar:{},
   isShowModal: false,
+  isBtn:true,
+  page:1
 };
 const carSlice = createSlice({
   name: 'car',
@@ -27,7 +29,14 @@ const carSlice = createSlice({
     },
     setCurrentCar(state, action){
       state.currentCar = action.payload;
+    },
+    setIsBtn(state, action){
+      state.isBtn = action.payload
+    },
+    setPage(state, action){
+      state.page = action.payload
     }
+
   },
   extraReducers: builder => {
     builder
@@ -59,12 +68,14 @@ const carSlice = createSlice({
       });
   },
 });
-export const { setFilter, setFavourites, setShowModal, setCurrentCar  } =
+export const { setFilter, setFavourites, setShowModal, setCurrentCar, setIsBtn, setPage  } =
   carSlice.actions;
 export const selectCars = state => state.items;
 export const selectFilter = state => state.filter;
 export const selectFavourites = state => state.favourites;
 export const selectShowModal = state => state.isShowModal;
 export const selectCurrentCar = state => state.currentCar;
+export const selectPage = state => state.page;
+export const selectIsBtn = state=> state.isBtn;
 
 export const carReducer = carSlice.reducer;
