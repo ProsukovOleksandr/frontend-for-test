@@ -1,26 +1,25 @@
-
-.backdrop{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(46, 47, 66, 0.4);
-    padding: 0px 20px;
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  padding: 0px 20px;
 }
-.container{
-    width: 100%;
-    height: 100%;
-    padding: 0px 20px;
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0px 20px;
 }
-.no-scroll{
-    overflow: hidden;
+.no-scroll {
+  overflow: hidden;
 }
-.loadMoreBtn{
-    width: 150px;
-    border: none;
-    background-color: #3470ff;
-    color: #fff;
-    padding: 10px 0;
-    border-radius: 30px;
+.loadMoreBtn {
+  width: 150px;
+  border: none;
+  background-color: #3470ff;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 30px;
 }
-.loadMoreBtn:hover{
-    background-color: #0B44CD;
+.loadMoreBtn:hover {
+  background-color: #0b44cd;
 }

@@ -10,20 +10,24 @@ export const Filter = () => {
   const handleFilter = e => {
     dispatch(setFilter(e.target.value));
   };
-  const showModal = useSelector(selectShowModal)
+  const showModal = useSelector(selectShowModal);
   return (
     <div className={css.filterContainer}>
-    <select
-      name="select-maker"
-      id=""
-      onChange={handleFilter}
-      className={css.filter }
-      disabled={showModal? true:false}
-    >
-      {filters.map(filter => {
-        return <option value={filter} key={nanoid()}>{filter}</option>;
-      })}
-    </select>
+      <select
+        name="select-maker"
+        id=""
+        onChange={handleFilter}
+        className={css.filter}
+        disabled={showModal ? true : false}
+      >
+        {filters.map(filter => {
+          return (
+            <option value={filter} key={nanoid()}>
+              {filter}
+            </option>
+          );
+        })}
+      </select>
     </div>
   );
 };

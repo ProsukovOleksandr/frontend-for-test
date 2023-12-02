@@ -5,7 +5,7 @@
   width: auto;
   min-height: 100vh;
   padding-top: 100px;
-  background-image: url("../../img/prokat-avto.jpg");
+  background-image: url('../../img/prokat-avto.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -61,5 +61,5 @@
   font-size: 20px;
 }
 .linkToCars:hover {
-  background-color: #0B44CD;
+  background-color: #0b44cd;
 }

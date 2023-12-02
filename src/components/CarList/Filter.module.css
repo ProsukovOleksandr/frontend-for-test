@@ -1,12 +1,12 @@
-.filterContainer{
-    position: static;
+.filterContainer {
+  position: static;
 }
-.filter{
-    width: 224px;
-    height: 48px;
-    border: none;
-    border-radius: 14px;
-    padding: 14px 18px;
-    background-color: #F7F7FB;
-    margin-top: 20px;
+.filter {
+  width: 224px;
+  height: 48px;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  background-color: #f7f7fb;
+  margin-top: 20px;
 }

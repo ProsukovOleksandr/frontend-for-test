@@ -9,10 +9,10 @@ export const initialState = {
   filter: '',
   favourites: [],
 
-  currentCar:{},
+  currentCar: {},
   isShowModal: false,
-  isBtn:true,
-  page:1
+  isBtn: true,
+  page: 1,
 };
 const carSlice = createSlice({
   name: 'car',
@@ -27,16 +27,15 @@ const carSlice = createSlice({
     setShowModal(state, action) {
       state.isShowModal = action.payload;
     },
-    setCurrentCar(state, action){
+    setCurrentCar(state, action) {
       state.currentCar = action.payload;
     },
-    setIsBtn(state, action){
-      state.isBtn = action.payload
+    setIsBtn(state, action) {
+      state.isBtn = action.payload;
     },
-    setPage(state, action){
-      state.page = action.payload
-    }
-
+    setPage(state, action) {
+      state.page = action.payload;
+    },
   },
   extraReducers: builder => {
     builder
@@ -60,7 +59,6 @@ const carSlice = createSlice({
       .addCase(fetchCarByID.fulfilled, (state, action) => {
         state.currentCar = action.payload;
         state.isLoadingModal = false;
-
       })
       .addCase(fetchCarByID.rejected, (state, action) => {
         state.isLoadingModal = false;
@@ -68,14 +66,20 @@ const carSlice = createSlice({
       });
   },
 });
-export const { setFilter, setFavourites, setShowModal, setCurrentCar, setIsBtn, setPage  } =
-  carSlice.actions;
+export const {
+  setFilter,
+  setFavourites,
+  setShowModal,
+  setCurrentCar,
+  setIsBtn,
+  setPage,
+} = carSlice.actions;
 export const selectCars = state => state.items;
 export const selectFilter = state => state.filter;
 export const selectFavourites = state => state.favourites;
 export const selectShowModal = state => state.isShowModal;
 export const selectCurrentCar = state => state.currentCar;
 export const selectPage = state => state.page;
-export const selectIsBtn = state=> state.isBtn;
+export const selectIsBtn = state => state.isBtn;
 
 export const carReducer = carSlice.reducer;

@@ -2,7 +2,13 @@ import css from './CarListItem.module.css';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux/es/exports';
-import { setFavourites, setShowModal, setCurrentCar, selectShowModal, selectFavourites  } from 'redux/carReducer';
+import {
+  setFavourites,
+  setShowModal,
+  setCurrentCar,
+  selectShowModal,
+  selectFavourites,
+} from 'redux/carReducer';
 import svg from '../../img/symbol-defs.svg';
 import { nanoid } from 'nanoid';
 export const CarListItem = ({ item }) => {
@@ -21,7 +27,7 @@ export const CarListItem = ({ item }) => {
     address,
   } = item;
   const favouritesArr = useSelector(selectFavourites);
-  const showModal = useSelector(selectShowModal)
+  const showModal = useSelector(selectShowModal);
   useEffect(() => {
     const found = favouritesArr.some(item => item.id === id);
     setFavourite(found);
@@ -45,7 +51,13 @@ export const CarListItem = ({ item }) => {
   };
   return (
     <div className={css.itemContainer}>
-        <img src={img} alt={description} width="274px" height="268px" className={css.carImg}/>
+      <img
+        src={img}
+        alt={description}
+        width="274px"
+        height="268px"
+        className={css.carImg}
+      />
       <div className={css.carBootomBar}>
         <div className={css.carBaseData}>
           <span className={css.carName}>
@@ -60,7 +72,11 @@ export const CarListItem = ({ item }) => {
               </svg>
             )}
             {!favourite && (
-              <svg width="18px" height="18px" className={css.favouriteFalseIcon}>
+              <svg
+                width="18px"
+                height="18px"
+                className={css.favouriteFalseIcon}
+              >
                 <use href={svg + '#icon-heart'}></use>
               </svg>
             )}
@@ -80,7 +96,11 @@ export const CarListItem = ({ item }) => {
             {model}
           </li>
         </ul>
-        <button className={css.learnMoreBtn} onClick={handleShowModal} disabled={showModal? true:false}>
+        <button
+          className={css.learnMoreBtn}
+          onClick={handleShowModal}
+          disabled={showModal ? true : false}
+        >
           Learn More
         </button>
       </div>
