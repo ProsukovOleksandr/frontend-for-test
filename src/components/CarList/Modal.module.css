@@ -1,0 +1,85 @@
+
+.modalLayout{
+  width: 485px;
+  height: 752px;
+  position: absolute;
+  top: 150px;
+  left: 30%;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 40px 16px 40px 40px;
+}
+.closeBtn{
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.modalLayout img{
+  border-radius: 14px;
+  width: 461px;
+  height: 248px;
+  margin-bottom: 14px;
+}
+.infoList{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #12141780;
+  column-gap: 12px;
+  row-gap: 4px;
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+.funcList{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #12141780;
+  column-gap: 12px;
+  row-gap: 4px;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+.modalCarName{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 14px;
+}
+.modalCarModel{
+  color: #3470FF;
+}
+.rentalList{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 8px;
+  margin-bottom: 44px;
+}
+.rentalItem{
+padding: 7px 14px;
+background-color:#F9F9F9 ;
+border-radius: 35px;
+width: auto;
+}
+.rentalBtn{
+  width: 168px;
+  height: 44px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3470FF;
+  border-radius: 12px;
+  padding: 12px 50px;
+  
+}

@@ -2,7 +2,7 @@ import css from './CarListItem.module.css';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux/es/exports';
-import { setFavourites } from 'redux/carReducer';
+import { setFavourites, setShowModal, setCurrentCar } from 'redux/carReducer';
 import svg from '../../img/symbol-defs.svg';
 import { nanoid } from 'nanoid';
 import { selectFavourites } from 'redux/carReducer';
@@ -17,15 +17,9 @@ export const CarListItem = ({ item }) => {
     type,
     img,
     description,
-    fuelConsumption,
-    engineSize,
-    accessories,
-    functionalities,
     rentalPrice,
     rentalCompany,
     address,
-    rentalConditions,
-    mileage,
   } = item;
   const favouritesArr = useSelector(selectFavourites);
 
@@ -45,8 +39,13 @@ export const CarListItem = ({ item }) => {
       setFavourite(true);
     }
   };
+  const handleShowModal = () => {
+    dispatch(setShowModal(true));
+    dispatch(setCurrentCar(item));
+    console.log("clicked")
+  };
   return (
-    <div className={css.itemContainer}>
+    <div className={css.itemContainer} >
       <div className={css.topBar}>
         <img src={img} alt={description} width="274px" height="268px" />
       </div>
@@ -87,6 +86,7 @@ export const CarListItem = ({ item }) => {
             {model}
           </li>
         </ul>
+        <button className={css.learnMoreBtn} onClick={handleShowModal}>Learn More</button>
       </div>
     </div>
   );

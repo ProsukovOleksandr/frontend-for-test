@@ -6,7 +6,6 @@ import { Filter } from './Filter';
 import { nanoid } from 'nanoid';
 export const CarList = ({ items }) => {
   const filter = useSelector(selectFilter);
-
   const filterCars = (items, filter) => {
     if (filter === '') {
       return items;
@@ -16,13 +15,19 @@ export const CarList = ({ items }) => {
       );
     }
   };
+
   return (
-    <div>
+    <div className={css.carList}>
       <h3>List of cars</h3>
       <Filter />
       <ul className={css.carList}>
         {filterCars(items, filter).map(item => {
-          return <CarListItem item={{ ...item }} key={nanoid()} />;
+          return (
+            <CarListItem
+              item={{ ...item }}
+              key={nanoid()}
+            />
+          );
         })}
       </ul>
     </div>
