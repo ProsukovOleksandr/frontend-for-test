@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/frontend-for-test/static/css/main.e88c39a2.css",
-    "main.js": "/frontend-for-test/static/js/main.edd15f63.js",
+    "main.js": "/frontend-for-test/static/js/main.dd338e50.js",
     "static/css/674.24cbeeea.chunk.css": "/frontend-for-test/static/css/674.24cbeeea.chunk.css",
     "static/js/674.d3d57544.chunk.js": "/frontend-for-test/static/js/674.d3d57544.chunk.js",
     "static/css/715.ab41f9e5.chunk.css": "/frontend-for-test/static/css/715.ab41f9e5.chunk.css",
-    "static/js/715.9432343a.chunk.js": "/frontend-for-test/static/js/715.9432343a.chunk.js",
+    "static/js/715.45e6d537.chunk.js": "/frontend-for-test/static/js/715.45e6d537.chunk.js",
     "static/css/635.dcfb1ed3.chunk.css": "/frontend-for-test/static/css/635.dcfb1ed3.chunk.css",
-    "static/js/635.ed1cf088.chunk.js": "/frontend-for-test/static/js/635.ed1cf088.chunk.js",
+    "static/js/635.fe91323f.chunk.js": "/frontend-for-test/static/js/635.fe91323f.chunk.js",
     "static/media/Manrope-VariableFont_wght.ttf": "/frontend-for-test/static/media/Manrope-VariableFont_wght.4afb283bba326df875f6.ttf",
     "static/media/prokat-avto.jpg": "/frontend-for-test/static/media/prokat-avto.a5b7826b3c952d83de1e.jpg",
     "static/media/symbol-defs.svg": "/frontend-for-test/static/media/symbol-defs.7fd1d2635b3a06a44f83bbca670dd552.svg",
     "index.html": "/frontend-for-test/index.html",
     "main.e88c39a2.css.map": "/frontend-for-test/static/css/main.e88c39a2.css.map",
-    "main.edd15f63.js.map": "/frontend-for-test/static/js/main.edd15f63.js.map",
+    "main.dd338e50.js.map": "/frontend-for-test/static/js/main.dd338e50.js.map",
     "674.24cbeeea.chunk.css.map": "/frontend-for-test/static/css/674.24cbeeea.chunk.css.map",
     "674.d3d57544.chunk.js.map": "/frontend-for-test/static/js/674.d3d57544.chunk.js.map",
     "715.ab41f9e5.chunk.css.map": "/frontend-for-test/static/css/715.ab41f9e5.chunk.css.map",
-    "715.9432343a.chunk.js.map": "/frontend-for-test/static/js/715.9432343a.chunk.js.map",
+    "715.45e6d537.chunk.js.map": "/frontend-for-test/static/js/715.45e6d537.chunk.js.map",
     "635.dcfb1ed3.chunk.css.map": "/frontend-for-test/static/css/635.dcfb1ed3.chunk.css.map",
-    "635.ed1cf088.chunk.js.map": "/frontend-for-test/static/js/635.ed1cf088.chunk.js.map"
+    "635.fe91323f.chunk.js.map": "/frontend-for-test/static/js/635.fe91323f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e88c39a2.css",
-    "static/js/main.edd15f63.js"
+    "static/js/main.dd338e50.js"
   ]
 }
