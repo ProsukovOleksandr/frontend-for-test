@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/frontend-for-test/static/css/main.e88c39a2.css",
+    "main.js": "/frontend-for-test/static/js/main.cae3fe22.js",
+    "static/css/674.24cbeeea.chunk.css": "/frontend-for-test/static/css/674.24cbeeea.chunk.css",
+    "static/js/674.d3d57544.chunk.js": "/frontend-for-test/static/js/674.d3d57544.chunk.js",
+    "static/css/715.8b3347e0.chunk.css": "/frontend-for-test/static/css/715.8b3347e0.chunk.css",
+    "static/js/715.8d27b5ca.chunk.js": "/frontend-for-test/static/js/715.8d27b5ca.chunk.js",
+    "static/css/635.2a54bb78.chunk.css": "/frontend-for-test/static/css/635.2a54bb78.chunk.css",
+    "static/js/635.7818f100.chunk.js": "/frontend-for-test/static/js/635.7818f100.chunk.js",
+    "static/media/Manrope-VariableFont_wght.ttf": "/frontend-for-test/static/media/Manrope-VariableFont_wght.4afb283bba326df875f6.ttf",
+    "static/media/prokat-avto.jpg": "/frontend-for-test/static/media/prokat-avto.a5b7826b3c952d83de1e.jpg",
+    "static/media/symbol-defs.svg": "/frontend-for-test/static/media/symbol-defs.7fd1d2635b3a06a44f83bbca670dd552.svg",
+    "index.html": "/frontend-for-test/index.html",
+    "main.e88c39a2.css.map": "/frontend-for-test/static/css/main.e88c39a2.css.map",
+    "main.cae3fe22.js.map": "/frontend-for-test/static/js/main.cae3fe22.js.map",
+    "674.24cbeeea.chunk.css.map": "/frontend-for-test/static/css/674.24cbeeea.chunk.css.map",
+    "674.d3d57544.chunk.js.map": "/frontend-for-test/static/js/674.d3d57544.chunk.js.map",
+    "715.8b3347e0.chunk.css.map": "/frontend-for-test/static/css/715.8b3347e0.chunk.css.map",
+    "715.8d27b5ca.chunk.js.map": "/frontend-for-test/static/js/715.8d27b5ca.chunk.js.map",
+    "635.2a54bb78.chunk.css.map": "/frontend-for-test/static/css/635.2a54bb78.chunk.css.map",
+    "635.7818f100.chunk.js.map": "/frontend-for-test/static/js/635.7818f100.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e88c39a2.css",
+    "static/js/main.cae3fe22.js"
+  ]
+}
