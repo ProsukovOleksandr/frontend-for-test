@@ -1,7 +1,9 @@
+
 .NavLink {
   color: #fff;
   text-decoration: none;
   margin-left: 10px;
+  font-weight: 500;
 }
 .navigationBlack {
   padding-top: 10px;

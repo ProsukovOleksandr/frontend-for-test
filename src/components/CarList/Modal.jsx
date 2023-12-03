@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { useDispatch } from 'react-redux';
 import { useCallback, useEffect } from 'react';
 import css from './Modal.module.css';
+import svg from '../../img/symbol-defs.svg';
 export const Modal = () => {
   const currentCar = useSelector(selectCurrentCar);
   const dispatch = useDispatch();
@@ -54,7 +55,9 @@ export const Modal = () => {
     return (
       <div className={css.modalLayout} onClick={handleBackdropClick}>
         <button className={css.closeBtn} onClick={hideModal}>
-          X
+          <svg width="16px" height="16px" className={css.closeIcon}>
+            <use href={svg + '#icon-x'}></use>
+          </svg>
         </button>
         <img src={img} alt={description} width="274px" height="268px" />
         <span className={css.modalCarName}>

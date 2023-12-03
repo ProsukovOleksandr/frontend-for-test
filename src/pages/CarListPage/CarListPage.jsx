@@ -32,7 +32,7 @@ const CarListPage = () => {
           <>
             <Filter />
             <CarList items={items} />
-            {items.length >= 12 && isBtn && !showModal && (
+            {items.length >= 12 && isBtn  && (
               <button onClick={loadMore} className={css.loadMoreBtn}>
                 Load More
               </button>
