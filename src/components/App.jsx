@@ -47,6 +47,7 @@ const App = () => {
           <Route path={HOME_ROUTE} element={<HomePage />} />
           <Route path={FAVOURITE_ROUTE} element={<FavouritePage />} />
           <Route path={CARS_ROUTE} element={<CarListPage />} />
+          <Route path={'*'} element={<HomePage />} />
         </Routes>
       </Suspense>
     </div>
