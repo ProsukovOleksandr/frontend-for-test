@@ -19,12 +19,7 @@ export const CarList = ({ items }) => {
     <div className={css.carList}>
       <ul className={css.carList}>
         {filterCars(items, filter).map(item => {
-          return (
-            <CarListItem
-              item={{ ...item }}
-              key={nanoid()}
-            />
-          );
+          return <CarListItem item={{ ...item }} key={nanoid()} />;
         })}
       </ul>
     </div>
